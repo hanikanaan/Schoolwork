@@ -1,0 +1,9 @@
+Problem 4 [8 points]
+Suppose you are given an array, A, containing n distinct integers that are listed in increasing order. Given
+a number k, implement a recursive algorithm to find two integers in A that sum to k, if such a pair exists.
+What is the running time of your algorithm?
+
+Discussion:
+This algorithm has a running time of O(n^2). This is because the longest loop takes (n - 1) + (n - 2) + ... + 3 + 2 + 1 + 0 iterations, and there are two loops of this length.
+Therefore, the sum becomes 2 * ((1 + 2 + 3 + 4 + ... + n)) at most. Simplifying, we get 2 * (n(n-1))/2 = n(n-1) = n^2 - n. Taking the most significant term from this (n^2), we can
+conclude that the algorithm has a RT of O(n^2).
